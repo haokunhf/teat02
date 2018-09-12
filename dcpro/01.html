@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>-->
+    <script src="https://cdn.bootcss.com/js-cookie/latest/js.cookie.js"></script>
+    <!--cookies.set
+    cookies.get
+    cookies.romove
+-->
+
+</head>
+<body>
+<input type="text" id="username">
+<input type="text" id="psw">
+<button id="btn">登录</button>
+<button id="btn1">注册</button>
+
+<script>
+
+    // Cookies.set({'name':222,"pass":546546});
+    /*Cookies.set('pass', '123465 ');
+    Cookies.set('pass', '123465 ');
+
+    console.log(Cookies.get('name'));
+    Cookies.remove('name')
+    console.log(Cookies.get('pass'));*/
+    $('#btn').click(function () {
+        Cookies.set('username', $('#username').val())
+        Cookies.set('password',$('#psw').val())
+        if (Cookies.get('username')!=''){
+            $.ajax({
+                url:"http://10.8.163.16:8080/ssologincheck.do",
+                // crossDomain: true,
+                type:"post",
+                data:{username:Cookies.get('username')},
+                xhrFields: {
+                    withCredentials: true
+                },
+                success:function (data) {
+                    console.log(data);
+                }
+            })
+        }
+
+    })
+/*
+* 注册*/
+if ($('#username').val()!=''){
+    $('#btn1').click(function () {
+        $.ajax({
+            url: "http://10.8.163.16:8080/register.do",
+            // crossDomain: true,
+            type: "post",
+            data: {username: $('#username').val(), password: $('#psw').val()},
+            success: function (data) {
+                console.log(data);
+            }
+        })
+
+    })
+}
+
+
+</script>
+</body>
+</html>

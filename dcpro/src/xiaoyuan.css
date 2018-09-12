@@ -1,0 +1,97 @@
+/*
+头部nav
+*/
+.tophead{
+    height: 30px;
+    background: #333;
+    line-height: 30px;
+    padding:2px 50px ;
+}
+.tophead a{
+    color: #fff;
+}
+.tophead a:hover{
+    color: turquoise;
+}
+.h_left{
+    /*background: yellow;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+}
+.h_left li{
+    padding: 0 20px;
+}
+.h_left li:nth-of-type(1){
+    border-right: 2px solid #000;
+}
+
+.h_right{
+    /*background: rebeccapurple;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 0;
+    height: 25px;
+
+}
+.h_right li{
+    border-right:2px solid #5d5d5d ;
+    padding:0 10px ;
+
+}
+/*
+navheade
+*/
+
+#head{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    padding:0 100px;
+
+}
+#head div:nth-of-type(1){
+    /*background: red;*/
+    font-size: 30px;
+}
+#head div:nth-of-type(1) a{
+    margin-right:  20px ;
+}
+
+#head div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    
+}
+#head div:nth-of-type(2) li{
+    margin:0 20px;
+}
+#head div:nth-of-type(2) a{
+    font-size: 30px;
+    color: #999;
+}
+#head div:nth-of-type(2) a:hover{
+    border-bottom: 2px solid #00b38a;
+    color: #333;
+}
+/*#head div:nth-of-type(2) a:active{
+    border-bottom: 2px solid #00b38a;
+
+
+}*/
+/*#head div:nth-of-type(2) a:link {border-bottom: 2px solid #00b38a}	!* 未访问的链接 *!*/
+ #head div:nth-of-type(2)  a:visited {border-bottom: 2px solid #00b38a}	/* 已访问的链接 */
+ /*#head div:nth-of-type(2) a:hover {border-bottom: 2px solid #00b38a}	!* 鼠标移动到链接上 *!*/
+ #head div:nth-of-type(2) a:active {border-bottom: 2px solid #00b38a}
+
+#head div:nth-of-type(3){
+    font-size: 20px;
+
+}
+#head div:nth-of-type(3) a{
+    margin-left:20px ;
+}
