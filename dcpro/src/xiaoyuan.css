@@ -95,3 +95,182 @@ navheade
 #head div:nth-of-type(3) a{
     margin-left:20px ;
 }
+#ssou{
+    height: 140px;
+    background: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*
+页面main1
+*/
+#section_main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    justify-content:space-between;
+    height: 300px;
+}
+
+.main #swiper{
+    background: red;
+    width: 840px;
+    height: 300px;
+}
+.main #swiper .ant-carousel .slick-slide {
+    text-align: center;
+    height: 220px;
+    line-height: 220px;
+    background: #364d79;
+    overflow: hidden;
+}
+.main #swiper .ant-carousel .slick-slide h3{
+    color: #fff;
+}
+.main #swiper .tab {
+    display: flex;
+    justify-content: space-between;
+}
+.main #swiper .tab li{
+    width: 160px;
+    height: 60px;
+    background:yellow;
+
+}
+
+/*
+tab选项卡
+
+*/
+.main1{
+    height: 700px;
+    background: cadetblue;
+    margin-top:40px ;
+}
+
+.tabsec{
+    width: 1200px;
+    height: 325px;
+    background: yellow;
+}
+.tabsec li{
+    box-sizing: border-box;
+    width: 70px;
+    text-align: center;
+    height: 100px;
+    margin: 30px 70px 28px 10px;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+}
+.tabsec li div{
+    width: 70px;
+    height: 70px;
+    background:cyan;
+    border-radius: 50%;
+}
+.tabsec li div:hover{
+    border: 2px solid #00b38a
+}
+.tabsec li h4{
+    /*margin-top:20px ;*/
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+    color: #1890ff;
+    font-weight: 500;
+}
+
+/*
+相亲页*/
+.detail{
+    background: #cecece;
+    min-height: 250px;
+
+}
+.detail h1{
+    font-size: 28px;
+
+}
+.detail .deD{
+    display: flex;
+}
+.detail .deD dl{
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    color: #777;
+    margin-right:20px ;
+}
+.detail p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.detail .imglist{
+    background: red;
+}
+.detail .imglist li{
+    width: 220px;
+    height: 130px;
+    float: left;
+    margin-left: 10px;
+    background: yellow;
+}
+
+/* mian2*/
+.main2{
+    height: 580px;
+    background:wheat;
+    margin: 20px 0 ;
+
+}
+.list_head{
+    background: yellow;
+}
+.m2_list:hover{
+
+    /*box-shadow: 10px ;*/
+    -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+    box-shadow: 2px 2px 2px  #888888;
+}
+/*
+main3*/
+.main3{
+    min-height: 200px;
+    /*background:#cecece;*/
+}
+.main3 h1{
+    font-size: 20px;
+    line-height: 60px;
+    border-bottom: 1px solid #cccccc ;
+    margin: 10px 0;
+}
+.main3 h1 span{
+    display:inline-block;
+    border-bottom: 3px solid #000000 ;
+    line-height: 60px;
+
+}
+.main3 ul li{
+    width: 200px;
+    height: 160px;
+    background:yellowgreen;
+    float: left;
+    margin-right: 10px;
+}
+.main3 ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main3 ul li a:hover{
+    background:rgba(0,0,0,.3);
+
+}
+.main3 ul li:nth-of-type(1){
+    width: 360px;
+
+}
