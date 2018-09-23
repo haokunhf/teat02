@@ -65,15 +65,47 @@ const xydata1=Mock.mock({
     'user_xy|15-20':[
         {
             "id|+1":0,
-
         }
         ]
 })
+/*
+* //获取url中查询字段
+function getUrlParam(param){
+	var search = location.search;
+	search = search.slice(1);
+	var arr = search.split('&');
+	var r = null;
+	arr.forEach(function(value){
+		//id=111
+		var tmpArr = value.split('=');
+		//['id','111'];
+		if(tmpArr[0] == param){
+			r =  tmpArr[1];
+		}
+	})
+	return r;
+
+}*/
 Mock.mock("http://www.chkhf.com","post",function (req) {
      console.log(req.body);
-     if (req.body==1){
-        return xydata1
-     }
+     var vs = eval(req.body)
+    console.log(vs);
+    /*var arr = req.body
+    console.log(arr);
+   var str =  arr.slice(1)
+    console.log(str);
+
+   var tmpArr = str.split('=')
+    console.log(tmpArr);
+    console.log(tmpArr[1]);*/
+    // var r = null
+    /*arr.forEach(function(value){
+        var tmpArr = value.split('=');
+        console.log(tmpArr);
+    })*/
+    // var cs = eval(req.body)
+    // console.log(cs);
+
 })
 class Xiaoyuan extends Component {
     constructor(props) {
@@ -317,7 +349,7 @@ class Xiaoyuan extends Component {
             url:"http://www.chkhf.com",
             type:"post",
             dataType:"json",
-            data:{id:1},
+            data:{id:2},
             success:function (data) {
                 console.log(data);
             }
